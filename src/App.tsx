@@ -50,35 +50,33 @@ function App() {
         className="h100"
       >
         <Grid item xs={12} className="ta-center">
-          <div>
-            <Typography variant="h1">
-              <IconButton
-                aria-label="minus"
-                onClick={minus}
-                size="large"
-                color="primary"
-              >
-                <RemoveIcon fontSize="inherit" />
-              </IconButton>
-              {formatNumber(counter)}
-              <IconButton
-                aria-label="add"
-                onClick={add}
-                size="large"
-                color="secondary"
-              >
-                <AddIcon fontSize="inherit" />
-              </IconButton>
-            </Typography>
-          </div>
-          <div>
-            <Button
-              variant="outlined"
-              onClick={() => setCounter(0)}
-              size="large"
-            >
-              Reset
-            </Button>
+          <div className="d-inline-block glass-card">
+            <div>
+              <Typography variant="h1">
+                <IconButton
+                  aria-label="minus"
+                  onClick={minus}
+                  size="large"
+                  color="primary"
+                >
+                  <RemoveIcon fontSize="inherit" />
+                </IconButton>
+                {formatNumber(counter)}
+                <IconButton
+                  aria-label="add"
+                  onClick={add}
+                  size="large"
+                  color="secondary"
+                >
+                  <AddIcon fontSize="inherit" />
+                </IconButton>
+              </Typography>
+            </div>
+            <div>
+              <Button onClick={() => setCounter(0)} size="large">
+                Reset
+              </Button>
+            </div>
           </div>
         </Grid>
       </Grid>

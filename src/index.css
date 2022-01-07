@@ -1,5 +1,16 @@
-body, html, #root {
+body,
+html,
+#root {
   height: 100%;
+}
+
+body {
+  background-image: linear-gradient(
+    302deg,
+    rgb(135, 154, 242) 0%,
+    rgb(211, 32, 139) 48%,
+    rgb(253, 160, 0) 100%
+  );
 }
 
 .h100 {
@@ -8,4 +19,37 @@ body, html, #root {
 
 .d-inline-block {
   display: inline-block;
+}
+
+.glass-card {
+  padding: 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.glass-card,
+button.MuiButton-text {
+  background-color: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: none;
+  text-transform: none !important;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: white;
+  margin-top: 1rem;
+}
+
+.glass-card button.MuiIconButton-root {
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: none;
 }
